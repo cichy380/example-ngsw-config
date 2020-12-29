@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {environment} from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ export class AppComponent implements OnInit {
   public name: string;
   public vehicle: string;
   public food: string;
+  public productionMode = environment.production;
 
   constructor(private http: HttpClient) {
   }

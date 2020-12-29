@@ -37,7 +37,7 @@ p {
 }
 
 .toolbar img {
-  margin: 0 16px;
+  margin: 0 8px;
 }
 
 .toolbar #github-logo {
@@ -237,6 +237,14 @@ svg#clouds {
   padding: 14px;
   line-height: 1.4;
   overflow-x: auto;
+}
+
+.bg-success {
+  background-color: #2e7d32;
+}
+
+.bg-danger {
+  background-color: #d32f2f;
 }
 
 
