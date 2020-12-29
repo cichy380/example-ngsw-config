@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1609253532181,
+  "timestamp": 1609260537861,
   "index": "https://cichy380.github.io/example-ngsw-config/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://cichy380.github.io/example-ngsw-config/favicon.ico",
         "https://cichy380.github.io/example-ngsw-config/index.html",
-        "https://cichy380.github.io/example-ngsw-config/main.81de606ee456505f6457.js",
+        "https://cichy380.github.io/example-ngsw-config/main.8fb8eee7a4e4fd260303.js",
         "https://cichy380.github.io/example-ngsw-config/manifest.webmanifest",
         "https://cichy380.github.io/example-ngsw-config/polyfills.8c151b8375e767ff858f.js",
         "https://cichy380.github.io/example-ngsw-config/runtime.0e49e2b53282f40c8925.js",
@@ -79,8 +79,8 @@
     "https://cichy380.github.io/example-ngsw-config/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://cichy380.github.io/example-ngsw-config/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://cichy380.github.io/example-ngsw-config/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://cichy380.github.io/example-ngsw-config/index.html": "d09be0e2cff8702a531ada69079d60edfe218700",
-    "https://cichy380.github.io/example-ngsw-config/main.81de606ee456505f6457.js": "4095a6951fefb360edf45c694a5f789a600b4b7a",
+    "https://cichy380.github.io/example-ngsw-config/index.html": "ea85972ef9d66433cf4fa1a86a94043af98215bf",
+    "https://cichy380.github.io/example-ngsw-config/main.8fb8eee7a4e4fd260303.js": "1c1887bde284b06f56ef6bd89970c1841eede699",
     "https://cichy380.github.io/example-ngsw-config/manifest.webmanifest": "c14df90b99f3bff65b617caf893031b95f0656c0",
     "https://cichy380.github.io/example-ngsw-config/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "https://cichy380.github.io/example-ngsw-config/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
