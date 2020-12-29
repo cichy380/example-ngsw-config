@@ -96,9 +96,10 @@
         "https://random-data-api.com/api/vehicle/random_vehicle"
       ],
       "cacheConfig": &#123;
-        "maxSize": 0,
-        "maxAge": "0u",
-        "strategy": "freshness"
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "5m",
+        "timeout": "1s"
       &#125;
     &#125;,
     &#123;
@@ -109,7 +110,7 @@
       "cacheConfig": &#123;
         "strategy": "performance",
         "maxSize": 100,
-        "maxAge": "2d"
+        "maxAge": "5m"
       &#125;
     &#125;
   ]
