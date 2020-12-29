@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1609260537861,
+  "timestamp": 1609278497490,
   "index": "https://cichy380.github.io/example-ngsw-config/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://cichy380.github.io/example-ngsw-config/favicon.ico",
         "https://cichy380.github.io/example-ngsw-config/index.html",
-        "https://cichy380.github.io/example-ngsw-config/main.8fb8eee7a4e4fd260303.js",
+        "https://cichy380.github.io/example-ngsw-config/main.421771dae6ba31fb4430.js",
         "https://cichy380.github.io/example-ngsw-config/manifest.webmanifest",
         "https://cichy380.github.io/example-ngsw-config/polyfills.8c151b8375e767ff858f.js",
         "https://cichy380.github.io/example-ngsw-config/runtime.0e49e2b53282f40c8925.js",
@@ -48,8 +48,9 @@
         "https:\\/\\/random-data-api\\.com\\/api\\/vehicle\\/random_vehicle"
       ],
       "strategy": "freshness",
-      "maxSize": 0,
-      "maxAge": 0,
+      "maxSize": 100,
+      "maxAge": 300000,
+      "timeoutMs": 1000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -62,7 +63,7 @@
       ],
       "strategy": "performance",
       "maxSize": 100,
-      "maxAge": 172800000,
+      "maxAge": 300000,
       "cacheQueryOptions": {
         "ignoreVary": true
       },
@@ -79,8 +80,8 @@
     "https://cichy380.github.io/example-ngsw-config/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "https://cichy380.github.io/example-ngsw-config/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://cichy380.github.io/example-ngsw-config/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://cichy380.github.io/example-ngsw-config/index.html": "ea85972ef9d66433cf4fa1a86a94043af98215bf",
-    "https://cichy380.github.io/example-ngsw-config/main.8fb8eee7a4e4fd260303.js": "1c1887bde284b06f56ef6bd89970c1841eede699",
+    "https://cichy380.github.io/example-ngsw-config/index.html": "c2de3da37c1b37190c2184a5b2ec94c5535a3caf",
+    "https://cichy380.github.io/example-ngsw-config/main.421771dae6ba31fb4430.js": "3921e287e2fdea3909ade89a7337ad6fb389029f",
     "https://cichy380.github.io/example-ngsw-config/manifest.webmanifest": "c14df90b99f3bff65b617caf893031b95f0656c0",
     "https://cichy380.github.io/example-ngsw-config/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
     "https://cichy380.github.io/example-ngsw-config/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
