@@ -1,27 +1,57 @@
-# ExampleNgswConfig
+# Example of Angular Service worker configuration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Development server
+## Service worker
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Service worker is a script that runs in the web browser and manages caching for an application. Service workers function as a network proxy. They intercept all outgoing HTTP requests made by the application and can choose how to respond to them.
 
-## Code scaffolding
+To set up the Angular service worker in this project, was use the CLI command `ng add @angular/pwa`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Source: https://angular.io/api/service-worker and https://angular.io/guide/service-worker-intro
 
-## Build
+## Data requests
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+The application calls to three API endpoints from the [Random Data Generator](https://random-data-api.com/):
 
-## Running unit tests
+ * *Name* from [/api/name/random_name](https://random-data-api.com/api/name/random_name) (no configured)
+ * *Vehicle* from [/api/vehicle/random_vehicle](https://random-data-api.com/api/vehicle/random_vehicle) (freshness strategy)
+ * *Food* from [/api/food/random_food](https://random-data-api.com/api/food/random_food) (performance strategy)
+ 
+ ## Configuration
+ 
+ The [`ngsw-config.json`](https://github.com/cichy380/example-ngsw-config/blob/main/ngsw-config.json) configuration file specifies eg. which data URLs the Angular service worker should cache and how it should update the data.
+ 
+#### `dataGroups`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ The configuration file uses the JSON format.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```json
+{
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "urls": [
+        "https://random-data-api.com/api/vehicle/random_vehicle"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 100,
+        "maxAge": "5m",
+        "timeout": "1s"
+      }
+    },
+    {
+      "name": "api-performance",
+      "urls": [
+        "https://random-data-api.com/api/food/random_food"
+      ],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 100,
+        "maxAge": "5m"
+      }
+    }
+  ]
+}
+```

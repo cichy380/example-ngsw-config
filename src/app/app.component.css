@@ -139,6 +139,10 @@ svg#clouds {
   background-color: #fff3e0;
 }
 
+.bg-purple {
+  background-color: #f3e5f5;
+}
+
 .py-1,
 .pt-1 {
   padding-top: 2px;
@@ -201,6 +205,14 @@ svg#clouds {
 
 .text-nowrap {
   white-space: nowrap;
+}
+
+.text-success {
+  color: #43a047;
+}
+
+.text-danger {
+  color: #e53935;
 }
 
 .list {
