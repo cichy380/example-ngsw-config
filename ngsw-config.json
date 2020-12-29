@@ -34,9 +34,9 @@
         "https://random-data-api.com/api/vehicle/random_vehicle"
       ],
       "cacheConfig": {
+        "strategy": "freshness",
         "maxSize": 0,
-        "maxAge": "0u",
-        "strategy": "freshness"
+        "maxAge": "0u"
       }
     },
     {
